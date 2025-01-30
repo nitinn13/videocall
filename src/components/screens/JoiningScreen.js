@@ -97,9 +97,9 @@ export function JoiningScreen({
   useEffect(() => {
     if (webcamOn) {
 
-      // Close the existing video track if there's a new one
+      
       if (videoTrackRef.current && videoTrackRef.current !== videoTrack) {
-        videoTrackRef.current.stop(); // Stop the existing video track
+        videoTrackRef.current.stop();
       }
 
       videoTrackRef.current = videoTrack;
@@ -322,7 +322,7 @@ export function JoiningScreen({
         await requestAudioVideoPermission(Constants.permission.VIDEO);
       }
     } catch (error) {
-      // For firefox, it will request audio and video simultaneously.
+      
       await requestAudioVideoPermission();
       console.log(error);
     }
@@ -400,7 +400,10 @@ export function JoiningScreen({
 
   return (
     <div className="fixed inset-0">
-      <div className="overflow-y-auto flex flex-col flex-1 h-screen bg-gray-800">
+      <div className="overflow-y-auto flex flex-col flex-1 h-screen bg-[#1F1E1E]">
+        <div className="text-[#ED8247] text-[4.5rem] font-bold font-sans text-center mb-[-10vh]">
+          SyncUp
+        </div>
         <div className="flex flex-1 flex-col md:flex-row items-center justify-center md:m-[72px] m-16">
           <div className="container grid  md:grid-flow-col grid-flow-row ">
             <div className="grid grid-cols-12">
