@@ -1,3 +1,6 @@
+## Fix mirroring
+
+
 # 🚀 Video SDK for React JS
 
 [![Documentation](https://img.shields.io/badge/Read-Documentation-blue)](https://docs.videosdk.live/react/guide/video-and-audio-calling-api-sdk/concept-and-architecture)
